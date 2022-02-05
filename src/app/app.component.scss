@@ -1,0 +1,33 @@
+/* Application-wide Styles */
+.content{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  .header, .body{
+    margin: 2px;
+    overflow: hidden;
+  }
+
+  .header{
+    background-color: #fff;
+    padding: 12px 24px;
+    height: 28px;
+    width: calc(100% - 52px);
+
+    h1 {
+      color: #000;
+      white-space:nowrap;
+      font-size: 28px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .body{
+    height: calc(100% - 58px);
+    margin-top: 0px;
+  }
+  
+}

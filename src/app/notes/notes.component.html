@@ -1,0 +1,19 @@
+<div id="notes-app-list">
+  <div class="list">
+    <ul class="notes">
+      <li *ngFor="let note of notes" 
+          routerLink="/notes/{{note.id}}"
+          (click)="onSelect(note)"
+          [class.selected]="note===selectedNote"
+      >
+          {{note.title}}
+      </li>
+      <li class="new" (click)="handleNoteCreate()">
+        Создать заметку
+      </li>
+    </ul>
+  </div>
+  <div class="details">
+    <app-note-detail [note]="selectedNote"></app-note-detail>
+  </div>
+</div>
